@@ -125,7 +125,7 @@ resource "kubernetes_service" "webapp_service" {
 }
 
 output "lb_ip" {
-  value = kubernetes_service.app1.status.0.load_balancer.0.ingress.0.hostname
+  value = kubernetes_service.webapp_service.status.0.load_balancer.0.ingress.0.hostname
 }
 
 
