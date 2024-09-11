@@ -81,7 +81,7 @@ resource "kubernetes_deployment" "app1" {
       spec {
         container {
           image = "simple-webapp"
-          name  = "kodecloud/webapp-color:v1"
+          name  = "kodekloud/webapp-color:v1"
 
           port {
             container_port = 80
